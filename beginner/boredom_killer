@@ -1,0 +1,141 @@
+            //This programs is a fun approach to learn functions and random and time module
+import random,time
+
+def crack_joke():
+    jokes=[ "Why don’t programmers like nature? Too many bugs! 🐞",
+        "I would tell you a joke about UDP... but you might not get it. 📡",
+        "Why did the file go to therapy? It couldn’t handle the pressure of being compressed. 😆",
+        "404 Joke Not Found! 🤖",
+        "I told my computer I needed a break… it froze.",
+        "Why don’t graveyards ever get overcrowded? Because people are dying to get in.",
+        "My wallet is like an onion — opening it makes me cry.",
+        "Parallel lines have so much in common… it’s a shame they’ll never meet.",
+        "I asked the librarian if the library had books on paranoia. She whispered, “\"They’re right behind you…\" ",
+        "I only know 25 letters of the alphabet....I don’t know y",
+        "My boss told me to have a good day… so I went home.",
+        "Why don’t scientists trust atoms? Because they make up everything!",
+        "I broke my finger last week. On the other hand, I’m okay.",
+        "Life’s short. Smile while you still have teeth."
+
+    ]
+
+    print("Your joke is coming right up.👇")
+    time.sleep(1)
+    print(random.choice(jokes))
+    print()
+
+
+def prank():
+    print("A virus is attacking your system")
+    print("Seems like a hacker is trying to break into your system......")
+    for i in range(1,6):
+        print(f"Hacking status......{i*20}.")
+    print("Windows closing")
+    time.sleep(3)
+    print("💀 Just kidding! You’ve been pranked. System safe. ✅")
+
+def roasting ():
+    roast=["Your code runs as fast as Internet Explorer on dial-up.",
+"Even print('Hello World') refuses to work for you.",
+"Your files are safer than your Wi-Fi password — because nobody wants them.",
+"You debug like you’re playing hide and seek with errors.",
+"Your file structure is so messy, even Windows gave up indexing it.",
+"Your Python indentation is a crime against humanity.",
+"Even ChatGPT thinks your code needs therapy.",
+"Your comments explain less than your variable names.",
+"You have more typos than files.",
+"Even Notepad++ has standards — and it rejected your file.",
+"Your hard drive is begging for mercy.",
+"You have less content than an empty .txt file.",
+"Even the Recycle Bin asked to reject your file."]
+    print("looks like your life hasn't roasted you enough....do you want to be burnt? idiot🤨")
+    print("Well.. wait for be to burn you , oh sorry fire you..🙄")
+    time.sleep(1.5)
+    print(random.choice(roast))
+
+def compliments():
+    comp=["You’re more reliable than autosave.",
+"Your creativity is bigger than my storage capacity.",
+"If you were a file, you’d be read-only — perfect as is.",
+"Even the recycle bin would refuse to delete you.",
+"You shine brighter than a freshly formatted SSD.",
+"If coding was a video game, you’d already be max level.",
+"Your ideas have more power than a supercomputer.",
+"You’re like open-source software — free, but priceless.",
+"Even Ctrl+Z can’t undo your greatness.",
+"You’re more organized than a JSON file with proper indentation."]
+    print("Here is a compliment for my ras malai from the bottom of my stomach..cuz it is bigger than my heart . 💋")
+    print("Compliment coming right up for my blue berry cheesecake 💕")
+    time.sleep(1.5)
+    print(random.choice(comp))
+
+
+
+def pickup():
+    cheesy=["Are you French? Because Eiffel for you.",
+    "Do you believe in love at first sight, or should I walk by again?",
+    "Are you Wi-Fi? Because I’m really feeling a connection.",
+    "If beauty were time, you’d be eternity.",
+    "Are you Google? Because you’ve got everything I’m searching for.",
+    "I must be a snowflake, because I’ve fallen for you.",
+    "Are you a keyboard? Because you’re just my type.",
+    "Excuse me, but I think you dropped something: my jaw.",
+    "Are you a magician? Because whenever I look at you, everyone else disappears.",
+    "If you were a vegetable, you’d be a cute-cumber."]
+
+    print("Looks like my cutie is in a mood of little flirting😏")
+    print("Say no more baby..")
+    time.sleep(1.5)
+    print(random.choice(cheesy))
+
+if __name__ == "__main__":
+
+
+    print("Welcome to our boredom killer machine.......")
+    print()
+    print("We hope that after playing this code you wilnot be bored or upset")
+    print()
+    print("Let's get started")
+    print()
+
+
+
+    while True:
+
+        print("1.Crack a joke\n")
+        print("2.prank\n")
+        print("3.roasting\n")
+        print("4.Compliment\n")
+        print("5.Pickup lines\n")
+        print("6.Exit\n")
+
+        choice=int(input("Enter the number corresponding your choice : "))
+
+
+        try:
+
+            if choice == 1:
+                crack_joke()
+
+            elif choice == 2:
+                prank()
+
+            elif choice == 3:
+                roasting()
+
+            elif choice == 4 :
+                compliments()
+
+            elif choice == 5 :
+                pickup()
+
+            elif choice == 6:
+                print("Exiting from loop.....")
+                time.sleep(1)
+                break
+        except:
+            print("Invalid data input")
+        
+
+
+
